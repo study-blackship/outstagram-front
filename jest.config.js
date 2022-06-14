@@ -11,9 +11,7 @@ const customJestConfig = {
     '<rootDir>/node_modules/',
     '<rootDir>/src\\/types/',
   ],
-  moduleNameMapper: {
-    sdfsd: 'sdfsdf',
-  },
+  moduleNameMapper: {},
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jsdom',
 };
