@@ -13,6 +13,10 @@
   ],
   "overrides": [
     {
+      "extends": ["plugin:cypress/recommended"],
+      "files": ["cypress/**/*"]
+    },
+    {
       "extends": [
         "plugin:jest-dom/recommended",
         "plugin:jest/recommended",
@@ -44,6 +48,10 @@
   "rules": {
     "@typescript-eslint/consistent-type-exports": "error",
     "@typescript-eslint/consistent-type-imports": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": "cypress.config.ts" }
+    ],
     "jsx-a11y/alt-text": ["error", { "img": ["Image"] }],
     "jsx-a11y/anchor-is-valid": [
       "error",
