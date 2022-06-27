@@ -44,6 +44,15 @@
   "rules": {
     "@typescript-eslint/consistent-type-exports": "error",
     "@typescript-eslint/consistent-type-imports": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/?(*.)+(spec|test).@(j|t)s?(x)",
+          "cypress.config.ts"
+        ]
+      }
+    ],
     "jsx-a11y/alt-text": ["error", { "img": ["Image"] }],
     "jsx-a11y/anchor-is-valid": [
       "error",

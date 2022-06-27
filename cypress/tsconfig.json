@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "isolatedModules": false,
+    "types": ["@testing-library/cypress", "cypress", "node"]
+  },
+  "include": ["**/*.ts"]
+}
