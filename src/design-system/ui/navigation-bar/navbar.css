@@ -1,0 +1,12 @@
+
+.navbar {
+  background-color: rgb(var(--ig-primary-background));
+  /* height: calc(var(--mobile-nav-height) - 1px); */
+  height: calc(48px - 1px);
+
+  @apply flex flex-wrap items-center justify-between text-[16px] left-0 right-0 fixed top-0 z-[1] font-semibold px-[16px];
+}
+
+.navbar h1 {
+  font-family: 'The Nautigal', cursive;
+}
