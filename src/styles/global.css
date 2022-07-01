@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import "~/src/design-system/ui/navigation-bar/navbar.css";
+@import "~/src/design-system/ui/avatar/avatar.css";
