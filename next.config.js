@@ -11,6 +11,9 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV !== 'development',
   },
   eslint: { dirs: ['src'], ignoreDuringBuilds: true },
+  images: {
+    domains: ['picsum.photos'],
+  },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
