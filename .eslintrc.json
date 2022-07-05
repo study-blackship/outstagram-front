@@ -25,6 +25,16 @@
       ]
     },
     {
+      "extends": "plugin:storybook/recommended",
+      "files": ["*.stories.@(j|t)s?(x)"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": ["src/**/*.stories.@(j|t)s?(x)"] }
+        ]
+      }
+    },
+    {
       "files": ["*.js"],
       "rules": {
         "@typescript-eslint/no-unsafe-assignment": "off",

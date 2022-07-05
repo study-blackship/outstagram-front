@@ -7,11 +7,10 @@ const createJestConfig = nextJest({ dir: '.' });
  */
 const customJestConfig = {
   collectCoverageFrom: ['src/**/*.@(j|t)s?(x)'],
-  coveragePathIgnorePatterns: [
-    '<rootDir>/node_modules/',
-    '<rootDir>/src\\/types/',
-  ],
-  moduleNameMapper: {},
+  moduleNameMapper: {
+    '^@/(.*)': '<rootDir>/src/$1',
+    '^src/(.*)': '<rootDir>/src/$1',
+  },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js', 'jest-plugin-context/setup'],
   testEnvironment: 'jsdom',
 };
