@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    color: #262626;
+    @apply max-w-screen-sm mx-auto text-[#262626];
   }
 }
